@@ -30,3 +30,46 @@ int main(){
 
     return 0;
 }
+3.Introduction to call by value and call by reference
+#include<iostream>
+using namespace std;
+int sum(int a,int b){
+    int c=a+b;
+    return c;
+}
+// THIS WILL NOT SWAP A AND B
+// void swap(int a,int b){
+//     int temp;
+//     temp=a;
+//     a=b;
+//     b=temp;
+// }
+
+// BUT WHEN ADDRESS IS PASSED,THIS WORKS.
+// THIS IS CALL BY REFERENCE USING POINTERS
+// void swappointer(int *a,int *b){
+//     int temp;
+//     temp=*a;
+//     *a=*b;
+//     *b=temp;
+// }
+
+// THIS IS CALL BY REFERENCE USING C++ REFERENCE VARIABLES
+void swapreference(int &a,int &b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+int main(){
+    int x=4,y=5;
+    cout<<"The sum of 4 and 5 is "<<sum(x,y)<<endl;
+    cout<<"The value before swapping numbers are "<<x<<" and "<<y<<endl;
+    // swap(a,b);
+    // swappointer(&a,&b);
+    swapreference(x,y);
+    cout<<"The value after swapping numbers are "<<x<<" and  "<<y<<endl;
+    
+
+    return 0;
+}
