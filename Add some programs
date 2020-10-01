@@ -5,3 +5,28 @@ cin>>n;
 for(int i='a';i<='z';i++){
   cout<<i<<endl;
 }
+2.Concept of pointers.
+#include<iostream>
+using namespace std;
+
+int main(){
+    // WHAT IS A POINTER--> A DATATYPE WHICH HOLDS THE ADDRESS OF ANOTHER DATA TYPE
+    int a=3;
+    int *b=&a;
+    // (&)--> ADDRESS OF OPERATOR
+    // cout<<"The value of a is:"<<a<<endl; // THIS WILL PRINT VALUE OF A
+    // (*)--> DEFERENCE OPERATOR(VALUE AT OPERATOR)
+    // cout<<"The value of a is:"<<*b<<endl; // THIS WILL ALSO PRINT VALUE OF A
+    // cout<<"The address of a is:"<<b<<endl; // THIS WILL PRINT ADDRESS OF A
+    // cout<<"The address of a is:"<<&a<<endl; // THIS WILL PRINT ADDRESS OF A
+    // cout<<"The address of b is:"<<&b<<endl;
+
+    // Pointer to pointer
+    // int** c = &b;
+    // cout<<"The address of b is "<<&b<<endl;
+    // cout<<"The address of b is "<<c<<endl; 
+    // cout<<"The value at address c is "<<*c<<endl; 
+    // cout<<"The value at address value_at(value_at(c)) is "<<**c<<endl; 
+
+    return 0;
+}
