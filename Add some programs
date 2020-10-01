@@ -1,1 +1,7 @@
-
+1.Program to print letters from a to z using for loop
+int n;
+cout<<("Enter the number till you want counting:");
+cin>>n;
+for(int i='a';i<='z';i++){
+  cout<<i<<endl;
+}
