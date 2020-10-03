@@ -1,1 +1,32 @@
+#include <iostream>
+using namespace std;
+class Book
+{
+public:
+    string title;
+    string author;
+    int pages;
+};
 
+int main()
+{
+    // HERE WE CREATE OBJECTS
+
+    Book book1;
+    book1.title = "How to Win Friends and Influence People";
+    book1.author = "Dale Carneige";
+    book1.pages = 278;
+    cout << "The title of the book is " << book1.title << "." << endl;
+    cout << "The author of the book is " << book1.author << "." << endl;
+    cout << "The number of pages in book is " << book1.pages << "." << endl;
+
+    Book book2;
+    book2.title = "Think and Grow Rich";
+    book2.author = "Napoleon Hill";
+    book2.pages = 500;
+    cout << "The title of the book is " << book2.title << "." << endl;
+    cout << "The author of the book is " << book2.author << "." << endl;
+    cout << "The number of pages in book is " << book2.pages << "." << endl;
+
+    return 0;
+}
