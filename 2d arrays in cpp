@@ -1,1 +1,19 @@
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    // 2D ARRAYS:-
+
+    int numbergrid[5][4] = {
+        {23, 45, 89, 25},
+        {85, 23, 45, 74},
+        {7, 2, 64, 13},
+        {2, 1, 4, 8},
+        {29, 16, 41, 84}};
+    cout << numbergrid[2][2] << endl;
+    cout << numbergrid[4][1] << endl;
+
+   
+    return 0;
+}
